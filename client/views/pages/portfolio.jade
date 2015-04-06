@@ -5,6 +5,41 @@ block content
   .jumbotron
     #hopliteContainer.container
       img(src='../../assets/Battlewise-Hoplite-Art.jpg')
-  .jumbotron
-    .experiment22
-      p Hello RED world
+      img(src='../../assets/Rise-of-Eagles-Art.jpg')
+      img(src='../../assets/Fated-Conflagration-Art.jpg')
+      img(src='')        
+  .container
+    .row
+      .span12
+        .well
+          #myCarousel.carousel.fdi-Carousel.slide
+            //- Carousel items
+            #eventCarousel.carousel.fdi-Carousel.slide(data-interval='0')
+              .carousel-inner.onebyone-carousel
+                .item.active
+                  .col-xs-4
+                    a(href='#')
+                      img.img-responsive.center-block(src='../../assets/Battlewise-Hoplite-Art.jpg')
+                    .text-center 1
+                .item
+                  .col-xs-4
+                    a(href='#')
+                      img.img-responsive.center-block(src='../../assets/Rise-of-Eagles-Art.jpg')
+                    .text-center 2
+                .item
+                  .col-xs-4
+                    a(href='#')
+                      img.img-responsive.center-block(src='../../assets/Fated-Conflagration-Art.jpg')
+                    .text-center 3
+                .item
+                  .col-xs-4
+                    a(href='#')
+                      img.img-responsive.center-block(src='../../assets/Rise-of-Eagles-Art.jpg')
+                    .text-center 4
+                .item
+                  .col-xs-4
+                    a(href='#')
+                      img.img-responsive.center-block(src='../../assets/Rise-of-Eagles-Art.jpg')
+                    .text-center 5
+            a.left.carousel-control(href="#eventCarousel", data-slide='prev')      
+            a.right.carousel-control(href="#eventCarousel", data-slide='next')      

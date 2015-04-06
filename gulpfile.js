@@ -27,6 +27,7 @@ var paths = {
   filesrc:  ['./client/**/*'],
   jadesrc:  ['./client/**/*.jade'],
   lesssrc:  ['./client/index.less'],
+  htmlsrc:  ['./public/**/*.html'],
   codesrc:  ['./client/**/*.js'],
   mediasrc: ['./client/assets/**/*', './client/favicon.ico'],
   destination: './public',
@@ -110,8 +111,7 @@ gulp.task('rev', ['less', 'js'], function() {
 
 gulp.task('replace', ['rev'], function() {
   var manifest = gulp.src(paths.manifest);
-
-  return gulp.src('./public/index.html')
+  return gulp.src(paths.htmlsrc)
     .pipe(replace({manifest: manifest}))
     .pipe(gulp.dest(paths.destination))
     .on('error', util.log);
@@ -164,7 +164,8 @@ gulp.task('watch', function() {
 
 gulp.task('aws:publish', function() {
   var publisher = awspublish.create({bucket: process.env.AWS_BUCKET});
-  var headers = {'Cache-Control': 'max-age=315360000, public'};
+  // var headers = {'Cache-Control': 'max-age=315360000, public'};
+  var headers = {};
   return gulp.src('./public/**/*')
     .pipe(awspublish.gzip())
     .pipe(parallelize(publisher.publish(headers), 20))

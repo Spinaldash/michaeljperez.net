@@ -5,14 +5,20 @@ html
     title MichaelJPerez.net
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/simplex/bootstrap.min.css", rel="stylesheet")
-    link(rel='stylesheet', href=isProd ? '../../stylesheetOne.min.css' : '../../stylesheetOne.css')
+    link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     include views/nav/nav
     block content
-      h1 Hello World
+      .box-with-text
+        h2 The Portfolio of 
+        h1 Michael J Perez
+      h3 ...making something beautiful out of something ordinary
+      hr
+      h1.technique-six Jolly Eagles
+        
       
     script(src='/vendor/lodash/lodash.min.js')
-    script(src=isProd ? 'index.min.js' : 'index.js')
+    script(src=isProd ? '/index.min.js' : '/index.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
