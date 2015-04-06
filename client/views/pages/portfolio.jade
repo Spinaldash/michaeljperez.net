@@ -1,36 +1,19 @@
 extends ../../index
 block content     
-  .container
-    .row
-      .span12
-        .well
-          #myCarousel.carousel.fdi-Carousel.slide
-            #eventCarousel.carousel.fdi-Carousel.slide(data-interval='0')
-              .carousel-inner.onebyone-carousel
-                .item.active
-                  .col-xs-4
-                    a(href='#')
-                      img.img-responsive.center-block(src='../../assets/Battlewise-Hoplite-Art.jpg')
-                    .text-center 1
-                .item
-                  .col-xs-4
-                    a(href='#')
-                      img.img-responsive.center-block(src='../../assets/Rise-of-Eagles-Art.jpg')
-                    .text-center 2
-                //- .item
-                //-   .col-xs-4
-                //-     a(href='#')
-                //-       img.img-responsive.center-block(src='../../assets/Fated-Conflagration-Art.jpg')
-                //-     .text-center 3
-                //- .item
-                //-   .col-xs-4
-                //-     a(href='#')
-                //-       img.img-responsive.center-block(src='../../assets/Unravel-the-Æther-Art-by-Jung-Park.jpg')
-                //-     .text-center 4
-                //- .item
-                //-   .col-xs-4
-                //-     a(href='#')
-                //-       img.img-responsive.center-block(src='../../assets/Fell-the-Mighty-MTG-Art.jpg')
-                //-     .text-center 5
-              a.left.carousel-control(href="#eventCarousel", data-slide='prev')      
-              a.right.carousel-control(href="#eventCarousel", data-slide='next')      
+  .slider-wrap
+    #slider.slider
+        .holder
+          #slide-0.slide
+            span.temp 74&deg;    
+          #slide-1.slide
+            span.temp 64&deg;
+          #slide-2.slide
+            span.temp 82&deg;
+          #slide-3.slide
+            span.temp 69&deg;
+      nav.slider-nav
+        a.active(href='#slide-0') Slide 0
+        a(href='#slide-1') Slide 1
+        a(href='#slide-2') Slide 2
+        a(href='#slide-3') Slide 3
+        
