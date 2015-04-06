@@ -1,11 +1,9 @@
 'use strict';
-console.log('apollo -> online');
-
 $(document).ready(function () {
     $('#myCarousel').carousel({
         interval: 10000
     })
-    $('.fdi-Carousel .item').each(function () {
+    $('.fdi-Carousel .item').each(function() {
         var next = $(this).next();
         if (!next.length) {
             next = $(this).siblings(':first');
