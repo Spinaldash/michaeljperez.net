@@ -8,7 +8,7 @@ var slider = {
     sliderNav: $(".slider-nav"),
     allNavButtons: $(".slider-nav > a")
   },
-  
+
   timing: 800,
   slideWidth: 300, // could measure this
 
