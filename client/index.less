@@ -32,10 +32,10 @@ h1.technique-six {
 .slider-wrap {
   width: 300px;
   height: 500px;
-  margin: 20px auto;
+  margin: 20px 20px;
 }
 .slider {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .holder {
   width: 400%;
@@ -57,16 +57,21 @@ h1.technique-six {
   font-weight: 100;
 }
 #slide-0 {
-  background-image: url(http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg);
+  background-image: url(/assets/Battlewise-Hoplite-Art.jpg);
+  background-position: 55% 50% !important;
 }
 #slide-1 {
-  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+  background-image: url(/assets/Archetype-of-Courage-Art.jpg);
+  background-position: 65% 10% !important;
+  background-repeat: no-repeat;
 }
 #slide-2 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+    background-image: url(/assets/Starfall-MtG-Art.jpg);
+    background-position: center 30% !important;
 }
 #slide-3 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+    background-image: url(/assets/Dawnbringer-Charioteers-MtG-Art.jpg);
+    background-position: center 30% !important;
 }
 .slide:before {
   content: "";
@@ -82,14 +87,18 @@ h1.technique-six {
   margin: 10px 0 0 0;
 }
 .slider-nav a {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background: #ddd;
   overflow: hidden;
   text-indent: -9999px;
   border-radius: 50%;
+  margin-right: 10px
 }
 .slider-nav a.active {
   background: #999;
+}
+.media-object {
+  
 }

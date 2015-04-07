@@ -5,6 +5,7 @@ html
     title MichaelJPerez.net
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/simplex/bootstrap.min.css", rel="stylesheet")
+    link(rel='stylesheet', href='/vendor/animate.css/animate.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
@@ -14,9 +15,23 @@ html
         h2 The Portfolio of 
         h1 Michael J Perez
       h3 ...making something beautiful out of something ordinary
-      hr
-        
-      
+      hr 
+      .jumbotron
+        .media
+          .media-left.media-middle
+            a(href='#')
+              img.media-object(src='/assets/KingSlimeIX.png')
+          .media-body
+            h4.media-heading King Slime
+            p Squid direct trade Carles chillwave. Blue Bottle ugh polaroid beard sustainable ethical. Biodiesel meditation High Life, gluten-free vegan cray hashtag slow-carb single-origin coffee. Kale chips four loko vinyl selvage beard.
+      .jumbotron
+        .media
+          .media-body
+            h4.media-heading King Right Slime
+            p Squid direct trade Carles chillwave. Blue Bottle ugh polaroid beard sustainable ethical. Biodiesel meditation High Life, gluten-free vegan cray hashtag slow-carb single-origin coffee. Kale chips four loko vinyl selvage beard.
+          .media-right.animated.infinite.bounce
+            a(href='#')
+              img.media-object(src='/assets/KingSlimeIX.png')
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
