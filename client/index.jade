@@ -11,33 +11,59 @@ html
     link(rel='shortcut icon', href='/favicon.ico')
   body
     include views/nav/nav
-    block content
-      .box-with-text
-        h2 The Portfolio of 
-        h1 Michael J Perez
-      h3 ...making something beautiful out of something ordinary
-      hr 
-      .jumbotron
-        .media
-          .media-left.media-middle
-            a(href='http://monsterhotel.herokuapp.com/', target='_blank')
-              img.hvr-wobble-horizontal.media-object(src='/assets/KingSlimeIX.png')
-          .media-body
-            h2.media-heading Monster Hotel
-            p An application to help manage your very own Monster Hotel. Keep track of your monsters and your clients.
-      .jumbotron
-        .media
-          .media-body
-            h2.media-heading Pied Piper
-            p Role(s): Project Manager & Front-End Developer
-            p A dating website prototype. Log in with Facebook, Create your own profile, and send messages, gifts, and pokes utilizing the blazing fast two way binding of angular. 
-            p For this web application I lead and participated in a team of four engineers (Two front-end / Two-backend). We designed Pied Piper as a dating app for the ever changing landscape of how people communicate.
-            p Built using Javascript, Jquery, and Angular on the front-end, and Mongodb, Node with Hapi.js, and Chai for our Testing. Some cool technologies we included: Facebook signin to populate your profile picture, Stripe integration for gift purchasing, and a database set up for winking, proposing dates, and sending messages.  
-          .media-right
-            a(href='https://pied-piper.herokuapp.com/#/')
-              img.hvr-wobble-horizontal.media-object(src='/assets/piedPiper.png')
-            a(href='#')
-              i.fa.fa-github-square.fa-3x
+    .container
+      block content
+        .box-with-text
+          h2 The Portfolio of 
+          h1 Michael J Perez
+        h3 ...making something beautiful out of something ordinary
+        hr 
+        .jumbotron
+          .media
+            .media-left.media-middle
+              a(href='http://monsterhotel.herokuapp.com/', target='_blank')
+                img.hvr-wobble-horizontal.media-object(src='/assets/KingSlimeIX.png')
+            .media-body
+              h2.media-heading Monster Hotel
+              p An application to help manage your very own Monster Hotel. Keep track of your monsters and your clients.
+        .jumbotron
+          .media
+            .media-body
+                .row
+                  .col-xs-4
+                    h2.media-heading Pied Piper
+                  .col-xs-2.leftIcon
+                    a.black.hvr-icon-pop(href='https://github.com/Spinaldash/loveMachine')
+                  .col-xs-12
+                    p Role(s): Project Manager & Front-End Developer
+                .row.noMargin
+                  hr
+                  p Pied Piper is a dating website prototype. Log in with Facebook, Create your own profile, and send messages, gifts, and pokes utilizing the blazing fast two way binding of angular. 
+                  p For this web application I lead and participated in a team of four engineers (Two front-end / Two-backend). We designed Pied Piper as a dating app for the ever changing landscape of how people communicate.
+                  p Built using Javascript, Jquery, and Angular on the front-end, and Mongodb, Node with Hapi.js, and Chai for our Testing. Some cool technologies we included: Facebook signin to populate your profile picture, Stripe integration for gift purchasing, and a database set up for winking, proposing dates, and sending messages.  
+            .media-right.media-middle            
+              a(href='https://pied-piper.herokuapp.com/#/')
+                img.hvr-wobble-horizontal.media-object(src='/assets/logos/piedPiper.png')
+                hr
+              .container-fluid
+                .row
+                  h3.pageHeader.centerIcon Technologies Used
+                  hr
+                .row
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/stripe.png")
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/AWS_logo.png")
+                .row
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/jquery.png")
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/chai.png")
+                .row
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/javascript.png")
+                  .col-xs-6.centerIcon
+                    img.iconPic(src="/assets/logos/angularjs-logo.png")
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
