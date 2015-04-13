@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset='utf-8')      
-    title MichaelJPerez.net
+    title The Portfolio of Michael J Perez
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/simplex/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/animate.css/animate.min.css')
@@ -11,8 +11,8 @@ html
     link(rel='shortcut icon', href='/assets/images/m.ico')
   body
     include views/nav/nav
-    .container
-      block content
+    block content
+      .container
         .box-with-text
           h2 The Portfolio of 
           h1 Michael J Perez
@@ -26,7 +26,7 @@ html
                 hr
               .container-fluid
                 .row
-                  h3.pageHeader.centerIcon Technologies Used
+                  h3.pageHeader.centerIcon.noMargin Technologies Used
                   hr
                 .row
                   .col-xs-6.centerIcon
@@ -47,11 +47,11 @@ html
             .media-body
               .row
                 .col-sm-3.col-xs-4
-                  h2.media-heading Game Swap
+                  h2.media-heading.noMargin Game Swap
                 .col-xs-2.leftIcon
                   a.black.hvr-icon-pop(href='https://github.com/Spinaldash/game-swap', target='_blank')
                 .col-xs-12
-                  p Trade your Video Games 
+                  em.noMargin.subtitle Trade your Video Games 
               .row.noMargin
                 hr
                 p Role(s): Full-Stack Web Developer / Designer
@@ -139,6 +139,15 @@ html
                   p Ever wanted to go on a vacation, but were unsure as to exactly where or what the best things to there were? 
                   p Toor solves that problem in the most powerful way possible, by asking your friends. Built using both the Twitter and the Sabre API's in order to offer destination options, and read suggestions your friends are tweeting at you. 
                   p 1st place Winner of the SABRE Api award for the Launch 2015 hackathon.
+      #about.container-fluid
+        .row
+          .col-xs-3
+            h3 About
+          .col-xs-8
+            h1 Full Stack Web Developer / Designer
+        .row
+          p Hi! My name is Michael and I am a Full Stack Web Developer based in San Francisco
+          
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
