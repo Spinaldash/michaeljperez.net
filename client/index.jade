@@ -10,9 +10,21 @@ html
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/assets/images/m.ico')
   body
+    //- My Websites: 
+    //-   http://todo.michaeljperez.net/
     include views/nav/nav
     block content
       .container
+        .hexagonGrid
+          span
+            .hexagon
+              .hexTop
+              .hexBottom
+          span
+            .hexagon
+              .hexTop
+              .hexBottom
+          
         .box-with-text
           h2 The Portfolio of 
           h1 Michael J Perez
@@ -150,6 +162,8 @@ html
         .row
           p Hi! My name is Michael and I am a Full Stack Web Developer based in San Francisco
           
+    script(src='/vendor/d3/d3.min.js')      
+    script(src="http://d3js.org/topojson.v1.min.js")
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
