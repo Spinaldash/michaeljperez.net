@@ -1,0 +1,223 @@
+/* *******************************************/
+/*                 General Css               */
+/* *******************************************/
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100);
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+#about {
+  background-color: #fff1fb;
+}
+.comfortaa {
+  font-family: 'Comfortaa';
+}
+.subtitle {
+  font-size: 14px;
+}
+.noMargin {
+  margin: 0px !important;
+}
+.centerIcon {
+  text-align: center;
+}
+.rightIcon {
+  text-align: right;
+}
+.leftIcon {
+  text-align: left;
+}
+.showcase {
+  width: 250px;
+}
+img {
+  border-radius: 10px;
+}
+.box-with-text {
+  /*  background-image: url(/assets/Fated-Conflagration-Art.jpg);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text; */
+  min-height: 20vh;
+  background-color: #ebcb78;
+}
+.box-with-text h1 {
+  font-size: 150px;
+  font-weight: bold;
+}
+h1.technique-six {
+  height: 350px;
+  padding: 75px 0 0 0;
+  height: 0;
+  background: url("assets/Rise-of-Eagles-Art.jpg") no-repeat;
+  overflow: hidden;
+}
+.iconPic {
+  display: inline;
+  height: 35px;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: filter 2s, -webkit-filter 1s;
+  transition: filter 2s, -webkit-filter 1s;
+}
+.iconPic:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.black {
+  color: black;
+}
+.noMargin {
+  margin: 0px;
+}
+.fantasy {
+  font-family: fantasy;
+}
+.experiment1 {
+  background-color: blue;
+  height: 100px;
+}
+.experiment2 {
+  background-color: red;
+  height: 100px;
+  width: 40%;
+}
+.divPic {
+  width: 250px;
+  height: 250px;
+  background: url("assets/Starfall-MtG-Art.jpg") no-repeat;
+  background-position: 55% 50%;
+  border-radius: 10px;
+  background-size: 400px auto;
+  background-clip: padding-box;
+}
+/* *******************************************/
+/* Hexagon Css */
+/* *******************************************/
+.hexagon {
+  fill: white;
+  pointer-events: all;
+}
+.hexagon path {
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+.hexagon :hover {
+  fill: pink;
+}
+.hexagon .fill {
+  fill: red;
+}
+.mesh {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+  pointer-events: none;
+}
+.border {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  pointer-events: none;
+}
+/* *******************************************/
+/* Slider Css */
+/* *******************************************/
+.slider-wrap {
+  width: 300px;
+  height: 500px;
+  margin: 20px 20px;
+}
+.slider {
+  overflow-x: hidden;
+}
+.holder {
+  width: 400%;
+}
+.slide {
+  float: left;
+  width: 300px;
+  height: 500px;
+  position: relative;
+  background-position: -100px 0;
+}
+.temp {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  bottom: 15px;
+  left: 15px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 100;
+}
+#slide-0 {
+  background-image: url(/assets/Battlewise-Hoplite-Art.jpg);
+  background-position: 55% 50% !important;
+}
+#slide-1 {
+  background-image: url(/assets/Archetype-of-Courage-Art.jpg);
+  background-position: 65% 10% !important;
+  background-repeat: no-repeat;
+}
+#slide-2 {
+  background-image: url(/assets/Starfall-MtG-Art.jpg);
+  background-position: center 30% !important;
+}
+#slide-3 {
+  background-image: url(/assets/Dawnbringer-Charioteers-MtG-Art.jpg);
+  background-position: center 30% !important;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(transparent, black);
+}
+.slider-nav {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.slider-nav a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.slider-nav a.active {
+  background: #999;
+}
+/* *************************************** */
+/* Hover.css Modifications */
+/* *************************************** */
+.hvr-icon-pop:before {
+  font-size: 30px;
+  content: "\f09b";
+  margin-top: -17px;
+  margin-right: 15px;
+}
+.hvr-icon-bounce:before {
+  font-size: 30px;
+  content: "\f091";
+  margin-top: -17px;
+  margin-right: 15px;
+}
+/* *************************************** */
+/* Bootstrap Modifications */
+/* *************************************** */
+.jumbotron {
+  border-radius: 10px;
+}
+.media-left {
+  width: 263px;
+}
+.navbar-brand {
+  margin-left: 8.5vw !important;
+}

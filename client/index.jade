@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset='utf-8')      
-    title The Portfolio of Michael J Perez
+    title Michael J Perez
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/simplex/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/animate.css/animate.min.css')
@@ -14,155 +14,144 @@ html
     //-   http://todo.michaeljperez.net/
     include views/nav/nav
     block content
-      .container
-        .hexagonGrid
-          span
-            .hexagon
-              .hexTop
-              .hexBottom
-          span
-            .hexagon
-              .hexTop
-              .hexBottom
-          
-        .box-with-text
-          h2 The Portfolio of 
-          h1 Michael J Perez
+      .box-with-text
+        h2.noMargin The Portfolio of 
+        h1 Michael J Perez
         h3 ...making something beautiful out of something ordinary
         hr 
-        .jumbotron
-          .media
-            .media-left.media-middle            
-              a(href='https://aqueous-crag-7207.herokuapp.com/#/')
-                img.showcase(src='/assets/images/1986_MarioMetroidmix.gif')
+      .jumbotron
+        .media
+          .media-left.media-middle            
+            a(href='https://aqueous-crag-7207.herokuapp.com/#/')
+              img.showcase(src='/assets/images/1986_MarioMetroidmix.gif')
+              hr
+            .container-fluid
+              .row
+                h3.pageHeader.centerIcon.noMargin Technologies Used
                 hr
-              .container-fluid
-                .row
-                  h3.pageHeader.centerIcon.noMargin Technologies Used
-                  hr
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/jquery.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/angularjs-logo.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/chai.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/node_logo.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/MongoDB.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/javascript.png")
-                    
-            .media-body
               .row
-                .col-sm-3.col-xs-4
-                  h2.media-heading.noMargin Game Swap
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/jquery.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/angularjs-logo.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/chai.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/node_logo.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/MongoDB.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/javascript.png")
+                  
+          .media-body
+            .row
+              .col-sm-3.col-xs-4
+                h2.media-heading.noMargin Game Swap
+              .col-xs-2.leftIcon
+                a.black.hvr-icon-pop(href='https://github.com/Spinaldash/game-swap', target='_blank')
+              .col-xs-6.col-sm-5
+            .row
+              .col-xs-12
+                em.noMargin.subtitle &nbsp&nbsp Trade your Video Games 
+            .row.noMargin
+              hr
+              p Role(s): Full-Stack Web Developer / Designer
+              p Share the joy of gaming. Game Swap lets you register and trade your cartrige games.
+              p Angular was used for our trading system which includes the ability to offer, accept, and deny trades as well as manage which games in your collection are up for trade.
+              p We developed this project using Test-Driven Development enabled by Chai.
+      .jumbotron
+        .media
+          .media-body
+              .row
+                .col-sm-2.col-xs-3
+                  h2.media-heading.fantasy BREW
                 .col-xs-2.leftIcon
-                  a.black.hvr-icon-pop(href='https://github.com/Spinaldash/game-swap', target='_blank')
-                .col-xs-6.col-sm-5
-              .row
+                  a.black.hvr-icon-pop(href='https://github.com/Spinaldash/mtgApp', target='_blank')
                 .col-xs-12
-                  em.noMargin.subtitle &nbsp&nbsp Trade your Video Games 
+                  em.noMargin.subtitle &nbsp&nbsp A Magic: The Gathering Compendium
               .row.noMargin
                 hr
                 p Role(s): Full-Stack Web Developer / Designer
-                p Share the joy of gaming. Game Swap lets you register and trade your cartrige games.
-                p Angular was used for our trading system which includes the ability to offer, accept, and deny trades as well as manage which games in your collection are up for trade.
-                p We developed this project using Test-Driven Development enabled by Chai.
-        .jumbotron
-          .media
-            .media-body
-                .row
-                  .col-sm-2.col-xs-3
-                    h2.media-heading.fantasy BREW
-                  .col-xs-2.leftIcon
-                    a.black.hvr-icon-pop(href='https://github.com/Spinaldash/mtgApp', target='_blank')
-                  .col-xs-12
-                    em.noMargin.subtitle &nbsp&nbsp A Magic: The Gathering Compendium
-                .row.noMargin
-                  hr
-                  p Role(s): Full-Stack Web Developer / Designer
-                  p Description: Brew is a web-application that allows the user to vizualize Magic the Gathering cards in unique and powerful ways. 
-                  p Add exactly the sets you want to filter from, and then sort the cards by Color, Casting Cost, or Card Type.
-                  p Brew employs Amazon Web Services to download and host the images on my own private bucket, and then updates the database to include an image url. 
+                p Description: Brew is a web-application that allows the user to vizualize Magic the Gathering cards in unique and powerful ways. 
+                p Add exactly the sets you want to filter from, and then sort the cards by Color, Casting Cost, or Card Type.
+                p Brew employs Amazon Web Services to download and host the images on my own private bucket, and then updates the database to include an image url. 
 
-            .media-right.media-middle            
-              a(href='https://github.com/Spinaldash/mtgApp', target='_blank')
-                .divPic.media-object
+
+          .media-right.media-middle            
+            a(href='http://brew.michaeljperez.net:3333/#/', target='_blank')
+              .divPic.media-object
+              hr
+            .container-fluid
+              .row
+                h3.pageHeader.centerIcon.noMargin Technologies Used
                 hr
-              .container-fluid
-                .row
-                  h3.pageHeader.centerIcon.noMargin Technologies Used
-                  hr
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/angularjs-logo.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/AWS_logo.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/gulp.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/nodejs.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/javascript.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/bootstrap-logo.png")
-        .jumbotron
-          .media
-            .media-left.media-middle            
-              a(href='http://www.toor.club/', target='_blank')
-                img.showcase.hvr-wobble-horizontal.media-object(src='/assets/Treasure-Cruise-MtG-Art.jpg')
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/angularjs-logo.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/AWS_logo.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/gulp.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/nodejs.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/javascript.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/bootstrap-logo.png")
+      .jumbotron
+        .media
+          .media-left.media-middle            
+            a(href='http://www.toor.club/', target='_blank')
+              img.showcase.hvr-wobble-horizontal.media-object(src='/assets/Treasure-Cruise-MtG-Art.jpg')
+              hr
+            .container-fluid
+              .row
+                h3.pageHeader.centerIcon.noMargin Technologies Used
                 hr
-              .container-fluid
-                .row
-                  h3.pageHeader.centerIcon.noMargin Technologies Used
-                  hr
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/sabre_logo.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/twitter.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/nodejs.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/jquery.png")
-                .row
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/hapi.png")
-                  .col-xs-6.centerIcon
-                    img.iconPic(src="/assets/logos/javascript.png")
-            .media-body
-                .row
-                  .col-sm-2.col-xs-3.leftIcon
-                    h2.comfortaa.media-heading TOOR
-                  .col-xs-1.leftIcon
-                    a.black.hvr-icon-pop(href='https://github.com/coding-house-jan2015/toor', target='_blank')
-                  .col-xs-1.leftIcon
-                    a.black.hvr-icon-bounce(href='https://twitter.com/bigdtweet/status/572235108133941248', target='_blank')
-                  .col-xs-12
-                    em.noMargin.subtitle &nbsp&nbsp Crowdsource your vacation
-                .row.noMargin
-                  hr
-                  p Role(s): Front-End Developer & Designer
-                  p Ever wanted to go on a vacation, but were unsure as to exactly where or what the best things to there were? 
-                  p Toor solves that problem in the most powerful way possible, by asking your friends. Built using both the Twitter and the Sabre API's in order to offer destination options, and read suggestions your friends are tweeting at you. 
-                  p 1st place Winner of the SABRE Api award for the Launch 2015 hackathon.
-      #about.container-fluid
-        .row
-          .col-xs-3
-            h3 About
-          .col-xs-8
-            h1 Full Stack Web Developer / Designer
-        .row
-          p Hi! My name is Michael and I am a Full Stack Web Developer based in San Francisco
-          
-    script(src='/vendor/d3/d3.min.js')      
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/sabre_logo.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/twitter.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/nodejs.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/jquery.png")
+              .row
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/hapi.png")
+                .col-xs-6.centerIcon
+                  img.iconPic(src="/assets/logos/javascript.png")
+          .media-body
+              .row
+                .col-sm-2.col-xs-3.leftIcon
+                  h2.comfortaa.media-heading TOOR
+                .col-xs-1.leftIcon
+                  a.black.hvr-icon-pop(href='https://github.com/coding-house-jan2015/toor', target='_blank')
+                .col-xs-1.leftIcon
+                  a.black.hvr-icon-bounce(href='https://twitter.com/bigdtweet/status/572235108133941248', target='_blank')
+                .col-xs-12
+                  em.noMargin.subtitle &nbsp&nbsp Crowdsource your vacation
+              .row.noMargin
+                hr
+                p Role(s): Front-End Developer & Designer
+                p Ever wanted to go on a vacation, but were unsure as to exactly where or what the best things to there were? 
+                p Toor solves that problem in the most powerful way possible, by asking your friends. Built using both the Twitter and the Sabre API's in order to offer destination options, and read suggestions your friends are tweeting at you. 
+                p 1st place Winner of the SABRE Api award for the Launch 2015 hackathon.
+    #about.container-fluid
+      .row
+        .col-xs-3
+          h3 About
+        .col-xs-8
+          h1 Full Stack Web Developer / Designer
+      .row
+        p Hi! My name is Michael and I am a Full Stack Web Developer based in San Francisco
+    script(src='/vendor/d3/d3.min.js')
     script(src="http://d3js.org/topojson.v1.min.js")
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
