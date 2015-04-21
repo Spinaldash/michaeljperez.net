@@ -2,11 +2,34 @@
 /*                 General Css               */
 /* *******************************************/
 
+@mainColor: #fd6500;
+
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);
 
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
+   padding-top: 41px;
+}
+
+/* .lessPadding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+} */
+
+.backgroundPrime{
+  background: @mainColor;
+  color: white !important;
+
+}
+
+.iconSize {
+  font-size: 25px !important;
+}
+
+.lessPadding {
+  padding-top: 7.5px !important;
+  padding-bottom: 7.5px !important;
 }
 
 #about {
@@ -43,17 +66,23 @@ img {
   border-radius: 10px;
 }
 
-.box-with-text {
+/* .box-with-text {
   h1{
     font-size: 150px;
     font-weight: bold;
   }
-/*  background-image: url(/assets/Fated-Conflagration-Art.jpg);
+background-image: url(/assets/Fated-Conflagration-Art.jpg);
 -webkit-text-fill-color: transparent;
--webkit-background-clip: text; */
+-webkit-background-clip: text;
   min-height: 20vh;
   background-color: #ebcb78;
 
+} */
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 h1.technique-six {
@@ -252,6 +281,9 @@ h1.technique-six {
   margin-right: 15px;
 }
 
+.hvr-underline-from-center:before {
+  background: @mainColor;
+}
 
 
 /* *************************************** */
@@ -266,6 +298,10 @@ h1.technique-six {
   width: 263px;
 }
 
-.navbar-brand {
-  margin-left: 8.5vw !important;
+a{
+  color: #777777 !important;
+}
+
+.container-fluid {
+  padding: 0px;
 }

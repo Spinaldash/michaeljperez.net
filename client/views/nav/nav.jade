@@ -1,19 +1,19 @@
-nav.navbar.navbar-default.noMargin
-  .container-fluid
+nav.navbar.navbar-default.noMargin.navbar-fixed-top
+  .container  
     .navbar-header
-      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
+      //- button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+      //-   span.sr-only Toggle navigation
+      //-   span.icon-bar
+      //-   span.icon-bar
+      //-   span.icon-bar
       a.hvr-underline-from-center.navbar-brand(href='/') Michael J. Perez
     #navbar.collapse.navbar-collapse
-      ul.nav.navbar-nav.navbar-right
-        //- li: a(href='/views/pages/portfolio.html'): i.fa.fa-street-view &nbsp; Portfolio
       ul.nav.navbar-nav.navbar-left
-        li: a.hvr-underline-from-center(href='https://twitter.com/spinaldash' target="_blank")
+        //- li: a(href='/views/pages/portfolio.html'): i.fa.fa-street-view &nbsp; Portfolio
+      ul.nav.navbar-nav.navbar-right.iconSize
+        li: a.lessPadding.hvr-underline-from-center(href='https://twitter.com/spinaldash' target="_blank")
           i.fa.fa-twitter-square
-        li: a.hvr-underline-from-center(href="https://github.com/Spinaldash" target="_blank")
-          i.fa.fa-github-square
-        li: a.hvr-underline-from-center(href='https://www.linkedin.com/in/mjosephvp' target="_blank")
-          i.fa.fa-linkedin-square
+        li: a.lessPadding.hvr-underline-from-center(href="https://github.com/Spinaldash" target="_blank")
+          i.fa.fa-github-square.iconSize
+        li: a.lessPadding.hvr-underline-from-center(href='https://www.linkedin.com/in/mjosephvp' target="_blank")
+          i.fa.fa-linkedin-square.iconSize
