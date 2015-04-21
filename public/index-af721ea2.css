@@ -1,68 +1,54 @@
 /* *******************************************/
 /*                 General Css               */
 /* *******************************************/
-
-@mainColor: #fd6500;
-
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);
-
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100);
 body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight: 300;
-   padding-top: 41px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  padding-top: 41px;
 }
-
 /* .lessPadding {
   padding-top: 0px;
   padding-bottom: 0px;
 } */
-
-.grayscale{
+.grayscale {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
-
 .grayscale:hover {
   transition-duration: 1s;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
-
-.backgroundPrime{
+.backgroundPrime {
   text-align: center;
-  background: @mainColor;
+  background: #fd6500;
   color: white !important;
-  h1 {
-    color: white;
-  }
 }
-
-.noMarginTop{
+.backgroundPrime h1 {
+  color: white;
+}
+.noMarginTop {
   margin-top: 0px;
 }
-
 .fullScreen {
   min-height: 100vh;
 }
-
 .iconSize {
   font-size: 25px !important;
 }
-
 .lessPadding {
   padding-top: 7.5px !important;
   padding-bottom: 7.5px !important;
 }
-
 #about {
   background-color: #fff1fb;
 }
-
 .comfortaa {
   font-family: 'Comfortaa';
 }
-
-.subtitle{
+.subtitle {
   font-size: 14px;
 }
 .noMargin {
@@ -71,23 +57,18 @@ body {
 .centerIcon {
   text-align: center;
 }
-
 .rightIcon {
   text-align: right;
 }
-
 .leftIcon {
   text-align: left;
 }
-
 .showcase {
   width: 250px;
 }
-
 img {
   border-radius: 10px;
 }
-
 /* .box-with-text {
   h1{
     font-size: 150px;
@@ -100,21 +81,18 @@ background-image: url(/assets/Fated-Conflagration-Art.jpg);
   background-color: #ebcb78;
 
 } */
-
 canvas {
-  position:absolute;
-  top:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 h1.technique-six {
-	height: 350px;
-	padding: 75px 0 0 0;
-	height: 0;
-	background: url("assets/Rise-of-Eagles-Art.jpg") no-repeat;
-	overflow: hidden;
+  height: 350px;
+  padding: 75px 0 0 0;
+  height: 0;
+  background: url("assets/Rise-of-Eagles-Art.jpg") no-repeat;
+  overflow: hidden;
 }
-
 .iconPic {
   display: inline;
   height: 35px;
@@ -122,44 +100,30 @@ h1.technique-six {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: filter 2s, -webkit-filter 1s;
-    transition:filter 2s, -webkit-filter 1s;
+  transition: filter 2s, -webkit-filter 1s;
 }
-
 .iconPic:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
 .black {
   color: black;
 }
-
 .noMargin {
   margin: 0px;
 }
 .fantasy {
   font-family: fantasy;
 }
-
 .experiment1 {
   background-color: blue;
   height: 100px;
 }
-
 .experiment2 {
   background-color: red;
   height: 100px;
   width: 40%;
 }
-
-.triangle1 {
-
-}
-
-.triangle2 {
-
-}
-
 .divPic {
   width: 250px;
   height: 250px;
@@ -169,49 +133,38 @@ h1.technique-six {
   background-size: 400px auto;
   background-clip: padding-box;
 }
-
 /* *******************************************/
 /* Hexagon Css */
 /* *******************************************/
-
 .hexagon {
   fill: white;
   pointer-events: all;
 }
-
 .hexagon path {
   -webkit-transition: fill 250ms linear;
   transition: fill 250ms linear;
 }
-
 .hexagon :hover {
   fill: pink;
 }
-
 .hexagon .fill {
   fill: red;
 }
-
 .mesh {
   fill: none;
   stroke: #000;
   stroke-opacity: .2;
   pointer-events: none;
 }
-
 .border {
   fill: none;
   stroke: #000;
   stroke-width: 2px;
   pointer-events: none;
 }
-
 /* *******************************************/
 /* Slider Css */
 /* *******************************************/
-
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100);
-
 .slider-wrap {
   width: 300px;
   height: 500px;
@@ -249,12 +202,12 @@ h1.technique-six {
   background-repeat: no-repeat;
 }
 #slide-2 {
-    background-image: url(/assets/Starfall-MtG-Art.jpg);
-    background-position: center 30% !important;
+  background-image: url(/assets/Starfall-MtG-Art.jpg);
+  background-position: center 30% !important;
 }
 #slide-3 {
-    background-image: url(/assets/Dawnbringer-Charioteers-MtG-Art.jpg);
-    background-position: center 30% !important;
+  background-image: url(/assets/Dawnbringer-Charioteers-MtG-Art.jpg);
+  background-position: center 30% !important;
 }
 .slide:before {
   content: "";
@@ -277,15 +230,11 @@ h1.technique-six {
   overflow: hidden;
   text-indent: -9999px;
   border-radius: 50%;
-  margin-right: 10px
+  margin-right: 10px;
 }
 .slider-nav a.active {
   background: #999;
 }
-.media-object {
-
-}
-
 /* *************************************** */
 /* Hover.css Modifications */
 /* *************************************** */
@@ -295,72 +244,61 @@ h1.technique-six {
   margin-top: -17px;
   margin-right: 15px;
 }
-
 .hvr-icon-bounce:before {
   font-size: 30px;
   content: "\f091";
   margin-top: -17px;
   margin-right: 15px;
 }
-
 .hvr-underline-from-center:before {
-  background: @mainColor;
+  background: #fd6500;
 }
-
-
-// *************************
-//     Letter FadeIn
-// *************************
-
-.fade-container{
+.fade-container {
   background: #fe9494;
   width: 400px;
   height: 300px;
   position: relative;
   transition: background 0.15s ease-in-out;
 }
-
 @-webkit-keyframes bounceInDown {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -3000px, 0);
-            transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
   }
-
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, 25px, 0);
-            transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
   }
-
   75% {
     opacity: 1;
     -webkit-transform: translate3d(0, -10px, 0);
-            transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
-
   90% {
     opacity: 1;
     -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
-
-.fade{
+.fade {
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   text-transform: uppercase;
   font-size: 2.5em;
@@ -368,32 +306,25 @@ h1.technique-six {
   text-align: left;
   width: 260px;
 }
-
-.bounceInDown{
+.bounceInDown {
   opacity: 0;
   -webkit-animation: bounceInDown 1s;
   animation: bounceInDown 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-
-
 /* *************************************** */
 /* Bootstrap Modifications */
 /* *************************************** */
-
 .jumbotron {
   border-radius: 10px;
 }
-
 .media-left {
   width: 263px;
 }
-
-a{
+a {
   color: #777777 !important;
 }
-
 .container-fluid {
   padding: 0px;
 }
